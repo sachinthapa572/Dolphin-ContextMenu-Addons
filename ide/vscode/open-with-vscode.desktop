@@ -1,0 +1,11 @@
+[Desktop Entry]
+Actions=openvscodedir
+MimeType=inode/directory;
+ServiceTypes=KonqPopupMenu/Plugin
+Type=Service
+X-KDE-Priority=TopLevel
+
+[Desktop Action openvscodedir]
+Exec=code %F
+Icon=com.visualstudio.code
+Name=Open with VS Code

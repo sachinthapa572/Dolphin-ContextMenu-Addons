@@ -1,11 +1,11 @@
 [Desktop Entry]
-Actions=openzedfile
+Actions=openvscodefile
 MimeType=text/plain;application/octet-stream;
 ServiceTypes=KonqPopupMenu/Plugin
 Type=Service
 X-KDE-Priority=TopLevel
 
-[Desktop Action openzedfile]
-Exec=zed %F
-Icon=zed
-Name=Edit with Zed
+[Desktop Action openvscodefile]
+Exec=code %F
+Icon=com.visualstudio.code
+Name=Edit with VS Code

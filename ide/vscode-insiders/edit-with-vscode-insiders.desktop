@@ -1,0 +1,11 @@
+[Desktop Entry]
+Actions=openvscodeinsidersfile
+MimeType=text/plain;application/octet-stream;
+ServiceTypes=KonqPopupMenu/Plugin
+Type=Service
+X-KDE-Priority=TopLevel
+
+[Desktop Action openvscodeinsidersfile]
+Exec=code-insiders %F
+Icon=com.visualstudio.code
+Name=Edit with VS Code Insiders

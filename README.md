@@ -1,6 +1,25 @@
 # Dolphin Context Menu Addons
 
-Easily add "Edit with" or "Open with" entries to the Dolphin context menu for any application, such as VS Code, Zed, Ghosty, a terminal, or any custom tool.
+Easily add "Edit with" or "Open with" entries to the Dolphin context menu for any application, such as VS Code, VS Code Insiders, Zed, Ghosty, a terminal, or any custom tool.
+
+## Repository Layout
+
+The service-menu files are grouped by application so the repository stays easy to scan as more entries are added.
+
+```text
+.
+├── README.md
+└── ide/
+    ├── vscode/
+    │   ├── edit-with-vscode.desktop
+    │   └── open-with-vscode.desktop
+    ├── vscode-insiders/
+    │   ├── edit-with-vscode-insiders.desktop
+    │   └── open-with-vscode-insiders.desktop
+    └── zed/
+        ├── edit-with-zed.desktop
+        └── open-with-zed.desktop
+```
 
 ## Installation
 
@@ -8,6 +27,8 @@ Easily add "Edit with" or "Open with" entries to the Dolphin context menu for an
 2. Move them to the service menus directory:
    - **Plasma 6**: `~/.local/share/kio/servicemenus/`
    - **Plasma 5**: `~/.local/share/kservices5/ServiceMenus/`
+
+If you clone the repository, copy the `.desktop` files from the app folders under `ide/` into the matching service menus directory.
 
 ## Customization
 
@@ -24,6 +45,15 @@ You can adapt these files for any application by editing the `.desktop` file in 
 Exec=code %F
 Icon=com.visualstudio.code
 Name=Open with VS Code
+```
+
+### Example for VS Code Insiders:
+
+```ini
+[Desktop Action openvscodeinsiders]
+Exec=code-insiders %F
+Icon=com.visualstudio.code
+Name=Open with VS Code Insiders
 ```
 
 ### Example for Ghosty:

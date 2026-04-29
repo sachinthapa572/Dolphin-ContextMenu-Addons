@@ -1,0 +1,11 @@
+[Desktop Entry]
+Actions=openzedfile
+MimeType=text/plain;application/octet-stream;
+ServiceTypes=KonqPopupMenu/Plugin
+Type=Service
+X-KDE-Priority=TopLevel
+
+[Desktop Action openzedfile]
+Exec=zeditor %F
+Icon=zeditor
+Name=Edit with Zed

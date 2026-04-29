@@ -6,6 +6,6 @@ Type=Service
 X-KDE-Priority=TopLevel
 
 [Desktop Action openzeddir]
-Exec=zed %F
-Icon=zed
+Exec=zeditor %F
+Icon=zeditor
 Name=Open with Zed
